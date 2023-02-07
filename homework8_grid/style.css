@@ -264,3 +264,17 @@ img{
     grid-row: 5 / span 2;
     background-color: rgb(183, 209, 253);
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+img{
+    width: 400px;
+    height: 300px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(4, 300px);
+    gap: 30px;
+    justify-content: center;
+}
