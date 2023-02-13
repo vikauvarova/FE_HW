@@ -134,6 +134,7 @@ header {
 @media screen and (max-width: 780px) {
     .about-items {
         grid-template-columns: 1fr;
+        padding: 57px 30px;
     }
 }
 
