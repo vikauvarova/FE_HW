@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+/* ------------------ header start------------------------------- */
+
+header {
+    min-height: 740px;
+    background-image: url(../images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+    position: relative;
+
+    font-family: 'Oswald';
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.h1 {
+    max-width: 734px;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: 0.02em;
+}
+
+.header-h4 {
+    max-width: 734px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+@media screen and (min-width: 610px) and (max-width: 745px) {
+    .h1 {
+        font-size: 55px;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width: 610px) {
+    .h1 {
+        font-size: 43px;
+        line-height: 65px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .h1 {
+        font-size: 31px;
+        line-height: 45px;
+    }
+}
+
+/* hader end */
+
+/* about start*/
+
+.about {
+    min-height: 300px;
+    background: #F7F7F7;
+    position: absolute;
+    top: 590px;
+    /* left: 50%;
+    transform: translate(-50%); */
+}
+
+.about-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    padding: 57px 130px;
+}
+
+.about-item {
+    width: 190px;
+    height: 186px;
+    text-align: center;
+
+    font-family: 'Oswald';
+    font-weight: 500;
+}
+
+.about-h4 {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 107px;
+    color: #f7654a;
+    /* margin-bottom: 25px; */
+}
+
+.about-h5 {
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.about-p {
+    font-size: 18px;
+    line-height: 27px;
+    color: #999999;
+}
+
+@media screen and (max-width:1200px) {
+
+    .about {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .about-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .about-items {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* about end */
+
+/* projects start */
+
+.projects {
+    margin-top: 250px;
+    font-family: "Oswald";
+}
+
+.projects-h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #404149;
+    margin-bottom: 60px;
+}
+
+.projects-items {
+    display: flex;
+    gap: 30px;
+}
+
+.projects-item {
+    max-width: 350px;
+}
+
+.project-img {
+    margin-bottom: 45px;
+}
+
+.line {
+    margin-bottom: 15px;
+    height: 6px;
+    width: 55px;
+    background-color: #F7654A;
+}
+
+.project-h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #404149;
+    margin-bottom: 25px;
+}
+
+.project-p {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #999999;
+    margin-bottom: 88px;
+}
+
+@media screen and (max-width:1200px) {
+    .projects {
+        margin-top: 450px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .projects-items {
+        /* flex-direction: column; */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .projects {
+        margin-top: 960px;
+    }
+}
+
+/* projects end */
+
+/* form start */
+
+.form {
+    background-color: #F7654A;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.form-items {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.form-header {
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.form-p {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+button {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-transform: uppercase;
+
+    width: 175px;
+    height: 49px;
+    background: #FFFFFF;
+    border: none;
+
+    margin-top: 43px;
+    margin-bottom: 59px;
+}
+
+@media screen and (max-width:1100px) {
+    .form-items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width: 610px) {
+    .form-header {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .form-p {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-header {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .form-p {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/* form  end*/
+
+/* task start */
+
+.tasks-block {
+    margin-bottom: 100px;
+}
+
+.tasks-h2 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+
+    margin-top: 100px;
+    margin-bottom: 66px;
+}
+
+.tasks {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 30px;
+}
+
+.task-item {
+    width: 350px;
+    height: 250px;
+    background: #F7F7F7;
+    text-align: center;
+    padding-left: 86px;
+    padding-right: 92px;
+    padding-top: 59px;
+}
+
+.task-h3 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+@media screen and (max-width:1100px) {
+    .tasks {
+        grid-template-columns: repeat(2, 350px);
+        justify-content: center;
+        max-width: 1000px;
+    }
+    
+
+}
+
+@media screen and (max-width:780px) {
+    .tasks {
+        grid-template-columns: repeat(1, 350px);
+        justify-content: center;
+        max-width: 780px;
+    }
+
+    .task-item {
+        
+    }
+}
+
+/* task end */
